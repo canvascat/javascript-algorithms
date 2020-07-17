@@ -1,7 +1,27 @@
 import Sort from '../Sort';
 
+/* 冒泡排序
+ * 比较相邻项，将较大项后移，一次遍历后即可将最大项移动到最后；比较(n - 1) * n / 2 次
+ */
+
+// function bubbleSort (originalArray, callback = (a, b) => a <= b) {
+//   const array = [...originalArray];
+//   for (let i = 0; i < array.length; i++) {
+//     let swapped = false;
+//     for (let j = 0; j < array.length - 1; j++) {
+//       if (!callback(array[j], array[j + 1])) {
+//         [array[j], array[j + 1]] = [array[j + 1], array[j]];
+//         swapped = true;
+//       }
+//     }
+//     if (!swapped) return array;
+//   }
+//   return array;
+// }
+
 export default class BubbleSort extends Sort {
   sort(originalArray) {
+    // 保存交换是否已经发生的信息的标志。
     // Flag that holds info about whether the swap has occur or not.
     let swapped = false;
     // Clone original array to prevent its modification.

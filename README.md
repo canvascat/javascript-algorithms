@@ -83,15 +83,15 @@ _注意：这个项目仅用于学习和研究，**不是**用于生产环境。
   - `B` [二分查找](src/algorithms/search/binary-search) - 搜索有序数组
   - `B` [插值搜索](src/algorithms/search/interpolation-search) - 搜索均匀分布的有序数组
 - **排序**
-  - `B` [冒泡排序](src/algorithms/sorting/bubble-sort)
-  - `B` [选择排序](src/algorithms/sorting/selection-sort)
-  - `B` [插入排序](src/algorithms/sorting/insertion-sort)
-  - `B` [堆排序](src/algorithms/sorting/heap-sort)
-  - `B` [归并排序](src/algorithms/sorting/merge-sort)
-  - `B` [快速排序](src/algorithms/sorting/quick-sort) - in-place (原地) 和 non-in-place 版本
-  - `B` [希尔排序](src/algorithms/sorting/shell-sort)
-  - `B` [计数排序](src/algorithms/sorting/counting-sort)
-  - `B` [基数排序](src/algorithms/sorting/radix-sort)
+  - [X] `B` [冒泡排序](src/algorithms/sorting/bubble-sort)
+  - [X] `B` [选择排序](src/algorithms/sorting/selection-sort)
+  - [X] `B` [插入排序](src/algorithms/sorting/insertion-sort)
+  - [ ] `B` [堆排序](src/algorithms/sorting/heap-sort)
+  - [ ] `B` [归并排序](src/algorithms/sorting/merge-sort)
+  - [ ] `B` [快速排序](src/algorithms/sorting/quick-sort) - in-place (原地) 和 non-in-place 版本
+  - [ ] `B` [希尔排序](src/algorithms/sorting/shell-sort)
+  - [ ] `B` [计数排序](src/algorithms/sorting/counting-sort)
+  - [ ] `B` [基数排序](src/algorithms/sorting/radix-sort)
 - **链表**
   - `B` [正向遍历](src/algorithms/linked-list/traversal)
   - `B` [反向遍历](src/algorithms/linked-list/reverse-traversal)
@@ -264,14 +264,14 @@ npm test -- 'playground'
 
 ### 数组排序算法的复杂性
 
-| 名称         |   最优   |      平均      |     最坏     |  内存  | 稳定 | 备注                                           |
-| ------------ | :------: | :------------: | :----------: | :----: | :--: | ---------------------------------------------- |
-| **冒泡排序** |    n     |      n^2       |     n^2      |   1    | Yes  |                                                |
-| **插入排序** |    n     |      n^2       |     n^2      |   1    | Yes  |                                                |
-| **选择排序** |   n^2    |      n^2       |     n^2      |   1    |  No  |                                                |
-| **堆排序**   | n log(n) |    n log(n)    |   n log(n)   |   1    |  No  |                                                |
-| **归并排序** | n log(n) |    n log(n)    |   n log(n)   |   n    | Yes  |                                                |
-| **快速排序** | n log(n) |    n log(n)    |     n^2      | log(n) |  No  | 在 in-place 版本下，内存复杂度通常是 O(log(n)) |
-| **希尔排序** | n log(n) | 取决于差距序列 | n (log(n))^2 |   1    |  No  |                                                |
-| **计数排序** |  n + r   |     n + r      |    n + r     | n + r  | Yes  | r - 数组里最大的数                             |
-| **基数排序** |  n \* k  |     n \* k     |    n \* k    | n + k  | Yes  | k - 最长 key 的升序                            |
+| 名称         |   最优   |      平均      |     最坏     |  内存  | 稳定  | 备注                                           |
+| ------------ | :------: | :------------: | :----------: | :----: | :---: | ---------------------------------------------- |
+| **冒泡排序** |    n     |      n^2       |     n^2      |   1    |  Yes  |                                                |
+| **插入排序** |    n     |      n^2       |     n^2      |   1    |  Yes  |                                                |
+| **选择排序** |   n^2    |      n^2       |     n^2      |   1    |  No   |                                                |
+| **堆排序**   | n log(n) |    n log(n)    |   n log(n)   |   1    |  No   |                                                |
+| **归并排序** | n log(n) |    n log(n)    |   n log(n)   |   n    |  Yes  |                                                |
+| **快速排序** | n log(n) |    n log(n)    |     n^2      | log(n) |  No   | 在 in-place 版本下，内存复杂度通常是 O(log(n)) |
+| **希尔排序** | n log(n) | 取决于差距序列 | n (log(n))^2 |   1    |  No   |                                                |
+| **计数排序** |  n + r   |     n + r      |    n + r     | n + r  |  Yes  | r - 数组里最大的数                             |
+| **基数排序** |  n \* k  |     n \* k     |    n \* k    | n + k  |  Yes  | k - 最长 key 的升序                            |
